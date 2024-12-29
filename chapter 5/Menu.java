@@ -1,7 +1,6 @@
-import java.io.IOException;
-
 public class Menu {
-    public static void main(String[] args) throws java.io.IOException {
+    public static void main(String[] args)
+    throws java.io.IOException {
             char choice;
 
             do {
