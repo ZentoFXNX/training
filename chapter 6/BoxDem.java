@@ -20,8 +20,6 @@ class BoxDemo6 {
         BoxDem mybox1 = new BoxDem();
         BoxDem mybox2 = new BoxDem();
 
-        double vol1, vol2;
-
-        System.out.println("Объём равен 1-ой: " + (vol1 = mybox1.volume()) + ", второй: " + (vol2 = mybox2.volume()) + ".");
+        System.out.println("Объём равен 1-ой: " + mybox1.volume() + ", второй: " + mybox2.volume() + ".");
     }
 }
