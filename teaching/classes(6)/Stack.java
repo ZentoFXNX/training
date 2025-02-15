@@ -6,8 +6,8 @@ public class Stack {
         tos = -1;
     }
 
-    void push(int item) {
-        if (tos == 9) System.out.println("Стек полон");
+    void push (int item) {
+        if (tos == 9) System.out.println("Стек заполнен");
         else stck[++tos] = item;
     }
 
@@ -28,9 +28,9 @@ class TestStack {
         for (int i = 0; i < 10; i++) mystack1.push(i);
         for (int i = 0; i < 10; i++) mystack2.push(i);
 
-        System.out.println("Стек mystack1:");
+        System.out.println("Стек в mystack1:");
         for (int i = 0; i < 10; i++) System.out.println(mystack1.pop());
-        System.out.println("Стек mystack2:");
+        System.out.println("Стек в mystack2:");
         for (int i = 0; i < 10; i++) System.out.println(mystack2.pop());
     }
 }
