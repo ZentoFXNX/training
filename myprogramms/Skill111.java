@@ -16,6 +16,6 @@ class MainSkill {
         Skill111 mainNumber = new Skill111(); 
         mainNumber.notnumber(number);
 
-        scanner.close()
+        scanner.close();
     }
 }
