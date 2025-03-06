@@ -1,4 +1,6 @@
-public class Array {
+package massivs;
+
+class Array {
     // использование одномерного массива.
     public static void main(String[] args) {
         // int[] mounth_days;

@@ -30,5 +30,7 @@ class CallByValue {
 
 
         System.out.println("a и b перед вызовом: " + object.a + " " + object.b);
+
+        // внутри метода meth используя 
     }
 }
