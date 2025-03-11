@@ -11,22 +11,18 @@ public class Task1102 {
         this.daysInYear = 365;
     }
 
-    // Метод для перевода минут в секунды
     public int minutesToSeconds(int minutes) {
         return minutes * seconds;
     }
 
-    // Метод для перевода часов в секунды
     public int hoursToSeconds(int hours) {
-        return hours * minutesToSeconds(minutes) * this.seconds;
+        return hours * minutes * seconds;
     }
 
-    // Метод для вычисления секунд в сутках
     public int dayInSeconds() {
         return hours * minutes * seconds;
     }
 
-    // Метод для вычисления секунд в году
     public int yearInSeconds() {
         return daysInYear * dayInSeconds();
     }
@@ -34,7 +30,7 @@ public class Task1102 {
     public static void main(String[] args) {
         Task1102 timer = new Task1102();
         
-        System.out.println("Секунд в сутках: " + timer.hoursToSeconds(1));
-        // System.out.println("Секунд в году: " + timer.yearInSeconds());
+        System.out.println("Секунд в сутках: " + timer.dayInSeconds());
+        System.out.println("Секунд в году: " + timer.yearInSeconds());
     }
 }
